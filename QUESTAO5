@@ -1,0 +1,24 @@
+programa {
+  inclua biblioteca Matematica
+  funcao inicio() {
+real numero
+		real arredondado
+		real raiz_quadrada
+		real elevado_quadrado
+
+		escreva("Digite um número real (com casas decimais): ")
+		leia(numero)
+
+		arredondado = Matematica.arredondar(numero, 2)
+
+		raiz_quadrada = Matematica.raiz(numero, 2.0)
+
+		elevado_quadrado = Matematica.potencia(numero, 2.0)
+
+		escreva("\n RESULTADOS ")
+		escreva("\nValor arredondado (2 casas): ", arredondado)
+		escreva("\nRaiz quadrada do número: ", raiz_quadrada)
+		escreva("\nValor elevado ao quadrado: ", elevado_quadrado, "\n")
+    
+  }
+}
