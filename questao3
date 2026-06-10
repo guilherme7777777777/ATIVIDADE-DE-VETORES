@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    real temperaturas[3][4]
+		inteiro linha, coluna
+
+		para (linha = 0; linha < 3; linha++)
+		{
+			para (coluna = 0; coluna < 4; coluna++)
+			{
+				escreva("Digite a temperatura da Cidade ", linha + 1, " no Dia ", coluna + 1, ": ")
+				leia(temperaturas[linha][coluna])
+			}
+		}
+
+		escreva("\n MATRIZ DE TEMPERATURAS\n")
+
+		para (linha = 0; linha < 3; linha++)
+		{
+			escreva("Cidade ", linha + 1, ": ")
+			para (coluna = 0; coluna < 4; coluna++)
+			{
+				escreva("[ ", temperaturas[linha][coluna], " ] ")
+			}
+			escreva("\n")
+		}
+  }
+}
